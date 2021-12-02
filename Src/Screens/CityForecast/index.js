@@ -17,7 +17,7 @@ import { AppColors } from "../../Theme";
 import styles from "./style";
 
 const CityForecast = (props) => {
-
+// cityscreen
   const dailyData = props.route.params.dailyData
   const cityName = props.route.params.cityName
 
@@ -34,6 +34,8 @@ const CityForecast = (props) => {
     return (dayOfWeek);
 
   }
+  
+  // render list hourly
 
   const renderList = (item) => {
     let dayTemperature = item.feels_like.day - 273.15
@@ -87,7 +89,6 @@ const CityForecast = (props) => {
           <Text style={styles.listText}>{item.humidity}</Text>
           <Text style={{ textAlign: "center", color: AppColors.white, marginBottom: 15 }}>Humidity</Text>
         </View>
-
 
       </View>
     )
