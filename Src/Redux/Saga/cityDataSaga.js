@@ -16,6 +16,7 @@ export function* weatherApiFailedSaga(result) {
 // Generator to run when Authentication Error occured in response
 function* weatherApiErrorSaga(result) {
     console.log('errrr', result);
+    alert(result.message)
     yield put({
         type: types.CITY_WEATHER_ERROR,
     })

@@ -38,7 +38,7 @@ const Home = (props) => {
   useEffect(() => {
     console.log('useeffect units call', units);
     // dispatch(cityDataAction("Mohali", AppConstants.constants.APIKEY))
-    //git push
+
   }, [])
 
   useEffect(() => {

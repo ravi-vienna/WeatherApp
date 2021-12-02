@@ -53,8 +53,15 @@ const ManageCities = (props) => {
     },[])
 
     const searchCityFun = () => {
-        setSearchCity('')
-        dispatch(cityDataAction(searchCity,AppConstants.constants.APIKEY))
+        if(searchCity.length == 0){
+            alert( "Please enter city name" )
+        }else if(searchCity.length < 3){
+            alert( "Wronge city name" )
+        }else{
+            setSearchCity('')
+            dispatch(cityDataAction(searchCity,AppConstants.constants.APIKEY))
+        }
+        
     }
 
 
