@@ -73,7 +73,8 @@ const Home = (props) => {
 
   return (
     // <View style={styles.container}>
-    //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
+  
+    //Swiper component
     <Swiper style={styles.wrapper} loop={false} showsPagination={true}>
       {
         DataModalArr ? DataModalArr.map((item) => {

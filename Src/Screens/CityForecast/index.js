@@ -34,6 +34,8 @@ const CityForecast = (props) => {
     return (dayOfWeek);
 
   }
+  
+  // render list hourly
 
   const renderList = (item) => {
     let dayTemperature = item.feels_like.day - 273.15
