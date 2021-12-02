@@ -82,7 +82,6 @@ const Home = (props) => {
               <StatusBar barStyle="dark-content" hidden={false} backgroundColor="#043B5D" translucent={true} />
               <CustomHome
                 item={item}
-                // leftClick={() => props.navigation.navigate('ManagesCities')}
                 leftClickCustom={() => props.navigation.navigate('ManagesCities')}
               />
 
