@@ -82,7 +82,7 @@ const allWeatherDataReducer = (state = initialState, action) => {
             return { ...state, isLoading: true };
 
         case types.API_ALL_WEATHER_DATA_SUCCESS:
-            console.log('action.result, action.cityData==>', action.result, action.cityData);
+            console.log('action.result,action.cityData==>', action.result, action.cityData);
             DataManager.setStoreData([...state.DataModalArr,createDataModal(action.result, action.cityData)])
             return {
                 ...state,
